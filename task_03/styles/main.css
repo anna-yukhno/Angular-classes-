@@ -1,0 +1,95 @@
+table {
+    width: 100%;
+}
+td {
+    text-align: center;
+}
+td span {
+    padding: 0 10px;
+}
+/*th:first-child,
+td:first-child {
+    text-align: left;
+}*/
+tr:nth-child(odd) td {
+    background-color: #ddd;
+    border: 1px solid #fff;
+}
+tr:nth-child(even) td {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+td > label {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+tr.striped td {
+    color: silver;
+}
+input[type=text],
+button[type=submit]{
+    height: 21px;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+select {
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+button[type=submit] {
+    padding: 0 10px;
+    color: #fff;
+    background-color:   #6B8E23;
+    border: 1px solid #6B8E23;
+}
+button[type=submit]:hover {
+    background-color: #32CD32;
+}
+button[type=submit][disabled] {
+    opacity: 0.5;
+    color: #757575;
+    pointer-events: none;
+    background-color: #ddd;
+}
+button.delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+button.delete:hover {
+    color: #f00;
+}
+button:focus {
+    outline: none;
+}
+
+.pageWrapper button{
+    border: none;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    font-size: 13px;
+    color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.pageWrapper button:hover{
+    background-color: green;
+}
+.pageWrapper button .active{
+    border: 1px solid green;
+    background-color: #000;
+    color: #fff;
+}
+.asc {
+    color: green;
+    margin-right: 5px;
+}
+.desc {
+    color: green;
+    margin-left: 5px;
+}
